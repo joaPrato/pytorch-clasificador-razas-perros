@@ -1,5 +1,3 @@
-import kagglehub
-import kaggle
 import os
 import shutil
 import pandas as pd
@@ -7,3 +5,147 @@ from PIL import Image
 import torch
 from torch.utils.data import Dataset, random_split
 from torchvision import transforms
+from typing import List
+from torch.utils.data import DataLoader
+
+
+#CLONACIÓN DEL DATASET DESDE GITHUB
+github_repo_url = 'https://github.com/joaPrato/pytorch-clasificador-razas-perros.git'
+dataset_folder_name = 'data'
+
+# Clonar del repositorio
+!git clone {github_repo_url}
+
+# Definición de la ruta
+cloned_repo_path = os.path.join(os.getcwd(), github_repo_url.split('/')[-1].replace('.git', ''))
+dataset_path_in_repo = os.path.join(cloned_repo_path, dataset_folder_name)
+
+# Crear carpeta data si no existe
+os.makedirs("data", exist_ok=True)
+
+# Mover los contenidos específicos del dataset a la carpeta data
+if os.path.exists(dataset_path_in_repo):
+    for item in ['train', 'test', 'labels.csv']:
+        src = os.path.join(dataset_path_in_repo, item)
+        dst = os.path.join("data", item)
+        if os.path.exists(src):
+            if os.path.exists(dst):
+                if os.path.isdir(dst):
+                    shutil.rmtree(dst)
+                else:
+                    os.remove(dst)
+            shutil.move(src, dst)
+            print(f'Se movio {item} a "data"')
+        else:
+            print(f'Cuidado: {item} no se encontro en el repositorio clonado.')
+
+    print(f'Completado')
+else:
+    print(f'La carpeta del dataset:  "{dataset_folder_name}" no se encontro en el repositorio.')
+
+
+# Eliminar carpeta del repositorio en el entrono local
+shutil.rmtree(cloned_repo_path)
+
+
+
+#CREACIÓN DE LA CLASE DEL DATASET
+class DogBreedDataset(Dataset):
+  def __init__(self, root_dir: str, mode: str, seed: int = 45, resizeHeight: int = 350, resizeWidth: int = 350, normalizeMean: List[float] = None, normalizeStd: List[float] = None, val_ratio: float = 0.2):
+      """
+      Args:
+          root_dir (str): Directorio base con 'train/', 'test/', y 'labels.csv'.
+          mode (str): 'train', 'val', o 'test'.
+          seed : valor de la semilla para mezclar los datos de train y validación (por defecto 45).
+          resizeWidth: ancho de la imágen para la transformación. (opcional)
+          resizeHeight : alto de la imágen para la transformación. (opcional)
+          normalizeMean: lista de 3 elementos con los valores de la medioa para la normalización (opcional)
+          normalizeStd: lista de 3 elementos con los valores de la desviación estandar para la normalización (opcional)
+          val_ratio (float): Proporción de train usada para validación (ej: 0.2 = 20%).
+      """
+      self.root_dir = root_dir
+      self.mode = mode
+      self.val_ratio = val_ratio
+      self.seed = seed
+      self.normalizeMean = normalizeMean
+      self.normalizeStd = normalizeStd
+      self.resizeHeight = resizeHeight
+      self.resizeWidth = resizeWidth
+      self.transform = self._get_transforms()
+
+
+      # Cargar datos de train/val (desde labels.csv)
+      if self.mode in ['train', 'val']:
+          self.labels_df = pd.read_csv(os.path.join(root_dir, 'labels.csv'))
+          self.breeds = sorted(self.labels_df['breed'].unique())
+          self.breed_to_idx = {breed: idx for idx, breed in enumerate(self.breeds)}
+
+          # Dividir índices en train/val
+          train_idx, val_idx = random_split(
+              range(len(self.labels_df)),
+              lengths=[1 - val_ratio, val_ratio],
+              generator=torch.Generator().manual_seed(seed)
+          )
+
+          self.indices = train_idx if mode == 'train' else val_idx
+          self.image_dir = os.path.join(root_dir, 'train')
+
+      # Cargar datos de test
+      else:
+          self.image_dir = os.path.join(root_dir, 'test')
+          self.image_files = [f for f in os.listdir(self.image_dir) if f.endswith('.jpg')]
+
+
+  def _get_transforms(self):
+      """Define transformaciones según el modo y si se proporciona normalización."""
+      transform_list = [
+          transforms.Resize((self.resizeHeight, self.resizeWidth)),     
+      ]
+
+      if self.mode == 'train':
+          #Image augmentation
+          transform_list.append(transforms.RandomResizedCrop([self.resizeHeight, self.resizeWidth], scale=(0.7, 1.0)))
+          transform_list.append( transforms.RandomHorizontalFlip())
+          transform_list.append(transforms.RandomVerticalFlip()) # Es conveniente poener a los perros de cabeza?
+          transform_list.append(transforms.RandomRotation(degrees=15))
+          transform_list.append(transforms.RandomGrayscale(p=0.2))
+      if self.normalizeMean is not None and self.normalizeStd is not None:
+          transform_list.append(transforms.Normalize(mean=self.normalizeMean, std=self.normalizeStd))
+      transform_list.append(transforms.ToTensor())
+      return transforms.Compose(transform_list)
+
+
+  def __len__(self):
+      return len(self.indices) if self.mode in ['train', 'val'] else len(self.image_files)
+
+  def __getitem__(self, idx):
+      if self.mode in ['train', 'val']:
+          img_id = self.labels_df.iloc[self.indices[idx], 0]
+          img_path = os.path.join(self.image_dir, f"{img_id}.jpg")
+          label = self.breed_to_idx[self.labels_df.iloc[self.indices[idx], 1]]
+      else:
+          img_path = os.path.join(self.image_dir, self.image_files[idx])
+          label = -1  # Placeholder para test
+
+      image = Image.open(img_path).convert('RGB')
+      if self.transform:
+          image = self.transform(image)
+
+      return image, label
+
+
+#FUNCIÓN PARA CREAR DATASETS DE TRAIN, VAL Y TEST
+def datasetsCration(seed: int = 45, resizeHeight: int = None, resizeWidth: int = None, normalizeMean: List[float] = None, normalizeStd: List[float] = None , val_ratio: float = 0.2):
+  train_dataset = DogBreedDataset('data', 'train', seed, resizeHeight, resizeWidth, normalizeMean, normalizeStd,val_ratio)
+  val_dataset = DogBreedDataset('data', 'val', seed, resizeHeight, resizeWidth, normalizeMean, normalizeStd,val_ratio)
+  test_dataset = DogBreedDataset('data', 'test', seed, resizeHeight, resizeWidth, normalizeMean, normalizeStd,val_ratio)
+  return train_dataset, val_dataset, test_dataset
+
+
+
+#DATA LOADERS
+BATCH_SIZE = 32 
+
+train_loader = DataLoader(train_dataset, batch_size=BATCH_SIZE, shuffle=True, num_workers=2)
+val_loader = DataLoader(val_dataset, batch_size=BATCH_SIZE, shuffle=False, num_workers=2)
+test_loader = DataLoader(test_dataset, batch_size=BATCH_SIZE, shuffle=False, num_workers=2)

@@ -1,0 +1,15 @@
+# Entornos virtuales
+dog_classifier_env/
+venv/
+env/
+ENV/
+
+# Archivos de Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Datos sensibles
+.env

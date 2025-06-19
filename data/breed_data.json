@@ -1,0 +1,962 @@
+{
+  "affenpinscher": {
+    "tamaño": "Pequeño",
+    "peso": "3-4 kg",
+    "altura": "23-30 cm",
+    "carácter": "Confiado, famoso, testarudo",
+    "esperanza_vida": "12-15 años",
+    "descripcion": "Pequeño perro alemán con cara de mono, juguetón y aventurero, excelente perro de compañía."
+  },
+  "afghan_hound": {
+    "tamaño": "Grande",
+    "peso": "20-27 kg",
+    "altura": "61-74 cm",
+    "carácter": "Aloof, digno, independiente",
+    "esperanza_vida": "12-18 años",
+    "descripcion": "Perro elegante y aristocrático con pelaje sedoso, originario de Afganistán, cazador independiente."
+  },
+  "african_hunting_dog": {
+    "tamaño": "Mediano",
+    "peso": "18-36 kg",
+    "altura": "75-110 cm",
+    "carácter": "Social, inteligente, cooperativo",
+    "esperanza_vida": "10-12 años",
+    "descripcion": "Canino salvaje africano, altamente social y eficiente cazador en manadas."
+  },
+  "airedale": {
+    "tamaño": "Grande",
+    "peso": "20-30 kg",
+    "altura": "56-61 cm",
+    "carácter": "Amigable, inteligente, valiente",
+    "esperanza_vida": "11-14 años",
+    "descripcion": "El 'Rey de los Terriers', versatil perro de trabajo británico, inteligente y leal."
+  },
+  "american_staffordshire_terrier": {
+    "tamaño": "Mediano",
+    "peso": "25-30 kg",
+    "altura": "43-48 cm",
+    "carácter": "Confiado, inteligente, buen carácter",
+    "esperanza_vida": "12-16 años",
+    "descripcion": "Perro muscular y ágil, leal a la familia, requiere socialización temprana."
+  },
+  "appenzeller": {
+    "tamaño": "Mediano",
+    "peso": "22-32 kg",
+    "altura": "48-58 cm",
+    "carácter": "Confiable, intrépido, vivaz",
+    "esperanza_vida": "13-15 años",
+    "descripcion": "Perro pastor suizo, atlético y trabajador, excelente para familias activas."
+  },
+  "australian_terrier": {
+    "tamaño": "Pequeño",
+    "peso": "6-7 kg",
+    "altura": "23-28 cm",
+    "carácter": "Afectuoso, valiente, vivaz",
+    "esperanza_vida": "11-15 años",
+    "descripcion": "Pequeño terrier australiano, robusto y trabajador, buen perro guardián."
+  },
+  "basenji": {
+    "tamaño": "Mediano",
+    "peso": "9-12 kg",
+    "altura": "38-43 cm",
+    "carácter": "Independiente, inteligente, equilibrado",
+    "esperanza_vida": "13-14 años",
+    "descripcion": "El 'perro sin ladrido' africano, limpio como un gato, cazador independiente."
+  },
+  "basset": {
+    "tamaño": "Mediano",
+    "peso": "20-29 kg",
+    "altura": "28-38 cm",
+    "carácter": "Paciente, afable, tranquilo",
+    "esperanza_vida": "12-13 años",
+    "descripcion": "Perro de caza francés con orejas largas, excelente olfato y temperamento gentil."
+  },
+  "beagle": {
+    "tamaño": "Mediano",
+    "peso": "9-11 kg",
+    "altura": "33-41 cm",
+    "carácter": "Amigable, curioso, alegre",
+    "esperanza_vida": "12-15 años",
+    "descripcion": "Perro de caza pequeño, excelente con niños y muy sociable, popular mascota familiar."
+  },
+  "bedlington_terrier": {
+    "tamaño": "Mediano",
+    "peso": "8-10 kg",
+    "altura": "38-44 cm",
+    "carácter": "Afable, alerta, energético",
+    "esperanza_vida": "11-16 años",
+    "descripcion": "Terrier inglés con apariencia de cordero, gentil en casa pero feroz cazador."
+  },
+  "bernese_mountain_dog": {
+    "tamaño": "Grande",
+    "peso": "36-48 kg",
+    "altura": "58-70 cm",
+    "carácter": "Buen carácter, amigable, paciente",
+    "esperanza_vida": "7-10 años",
+    "descripcion": "Perro de montaña suizo, grande y gentil, excelente con familias y niños."
+  },
+  "black-and-tan_coonhound": {
+    "tamaño": "Grande",
+    "peso": "23-34 kg",
+    "altura": "58-69 cm",
+    "carácter": "Easygoing, gentil, adaptable",
+    "esperanza_vida": "10-12 años",
+    "descripcion": "Sabueso estadounidense especializado en caza nocturna, tranquilo y amigable."
+  },
+  "blenheim_spaniel": {
+    "tamaño": "Pequeño",
+    "peso": "5-8 kg",
+    "altura": "30-33 cm",
+    "carácter": "Afectuoso, gentil, gracioso",
+    "esperanza_vida": "12-15 años",
+    "descripcion": "Variedad del Cavalier King Charles Spaniel, elegante perro de compañía real."
+  },
+  "bloodhound": {
+    "tamaño": "Grande",
+    "peso": "36-50 kg",
+    "altura": "58-69 cm",
+    "carácter": "Gentil, tenaz, independiente",
+    "esperanza_vida": "10-12 años",
+    "descripcion": "Sabueso con el mejor olfato del mundo, usado en búsqueda y rescate."
+  },
+  "bluetick": {
+    "tamaño": "Mediano",
+    "peso": "20-36 kg",
+    "altura": "51-69 cm",
+    "carácter": "Amigable, inteligente, activo",
+    "esperanza_vida": "11-12 años",
+    "descripcion": "Sabueso estadounidense con distintivo pelaje moteado, excelente cazador."
+  },
+  "border_collie": {
+    "tamaño": "Mediano",
+    "peso": "14-20 kg",
+    "altura": "46-56 cm",
+    "carácter": "Inteligente, enérgico, alerta",
+    "esperanza_vida": "12-15 años",
+    "descripcion": "La raza más inteligente, pastor británico excepcional, requiere mucho ejercicio mental."
+  },
+  "border_terrier": {
+    "tamaño": "Pequeño",
+    "peso": "5-7 kg",
+    "altura": "28-40 cm",
+    "carácter": "Afectuoso, feliz, obediente",
+    "esperanza_vida": "13-15 años",
+    "descripcion": "Terrier británico trabajador, buen temperamento con familias y otros perros."
+  },
+  "borzoi": {
+    "tamaño": "Grande",
+    "peso": "27-48 kg",
+    "altura": "68-85 cm",
+    "carácter": "Gentil, tranquilo, atlético",
+    "esperanza_vida": "9-14 años",
+    "descripcion": "Galgo ruso elegante y aristocrático, cazador de lobos, gentil compañero."
+  },
+  "boston_bull": {
+    "tamaño": "Pequeño",
+    "peso": "4-11 kg",
+    "altura": "38-43 cm",
+    "carácter": "Amigable, brillante, divertido",
+    "esperanza_vida": "11-13 años",
+    "descripcion": "Boston Terrier, 'caballero americano', compacto y bien educado perro urbano."
+  },
+  "bouvier_des_flandres": {
+    "tamaño": "Grande",
+    "peso": "27-40 kg",
+    "altura": "59-68 cm",
+    "carácter": "Gentil, valiente, fuerte",
+    "esperanza_vida": "10-12 años",
+    "descripcion": "Pastor belga robusto y peludo, versátil perro de trabajo y guardián."
+  },
+  "boxer": {
+    "tamaño": "Grande",
+    "peso": "25-32 kg",
+    "altura": "53-63 cm",
+    "carácter": "Brillante, juguetón, activo",
+    "esperanza_vida": "10-12 años",
+    "descripcion": "Perro alemán atlético y leal, excelente con niños, guardián juguetón."
+  },
+  "brabancon_griffon": {
+    "tamaño": "Pequeño",
+    "peso": "3-6 kg",
+    "altura": "18-20 cm",
+    "carácter": "Alerta, curioso, leal",
+    "esperanza_vida": "12-15 años",
+    "descripcion": "Pequeño perro belga con cara expresiva, compañero urbano inteligente y alerta."
+  },
+  "briard": {
+    "tamaño": "Grande",
+    "peso": "23-41 kg",
+    "altura": "56-69 cm",
+    "carácter": "Confiado, inteligente, imparcial",
+    "esperanza_vida": "12 años",
+    "descripcion": "Pastor francés con largo pelaje ondulado, leal guardián familiar y trabajador."
+  },
+  "brittany_spaniel": {
+    "tamaño": "Mediano",
+    "peso": "14-18 kg",
+    "altura": "44-52 cm",
+    "carácter": "Brillante, ansioso, atlético",
+    "esperanza_vida": "12-15 años",
+    "descripcion": "Perro de caza francés energético, excelente compañero deportivo y familiar."
+  },
+  "bull_mastiff": {
+    "tamaño": "Grande",
+    "peso": "45-59 kg",
+    "altura": "61-69 cm",
+    "carácter": "Afectuoso, leal, valiente",
+    "esperanza_vida": "7-9 años",
+    "descripcion": "Guardián británico poderoso pero gentil, protector silencioso de la familia."
+  },
+  "cairn": {
+    "tamaño": "Pequeño",
+    "peso": "6-8 kg",
+    "altura": "23-33 cm",
+    "carácter": "Alerta, alegre, ocupado",
+    "esperanza_vida": "13-15 años",
+    "descripcion": "Cairn Terrier escocés, robusto y trabajador, famoso por 'El Mago de Oz'."
+  },
+  "cardigan": {
+    "tamaño": "Mediano",
+    "peso": "11-17 kg",
+    "altura": "27-32 cm",
+    "carácter": "Afectuoso, leal, inteligente",
+    "esperanza_vida": "12-15 años",
+    "descripcion": "Welsh Corgi Cardigan, pastor galés con cola, más tranquilo que el Pembroke."
+  },
+  "chesapeake_bay_retriever": {
+    "tamaño": "Grande",
+    "peso": "25-36 kg",
+    "altura": "53-66 cm",
+    "carácter": "Brillante, tranquilo, afectuoso",
+    "esperanza_vida": "10-13 años",
+    "descripcion": "Retriever estadounidense resistente al agua fría, cazador dedicado y leal."
+  },
+  "chihuahua": {
+    "tamaño": "Pequeño",
+    "peso": "1-3 kg",
+    "altura": "15-23 cm",
+    "carácter": "Gracioso, encantador, sassy",
+    "esperanza_vida": "14-16 años",
+    "descripcion": "La raza más pequeña del mundo, valiente perro mexicano con gran personalidad."
+  },
+  "chow": {
+    "tamaño": "Mediano",
+    "peso": "20-32 kg",
+    "altura": "43-51 cm",
+    "carácter": "Digno, brillante, serio",
+    "esperanza_vida": "8-12 años",
+    "descripcion": "Chow Chow chino antiguo con lengua azul, independiente y leal a su familia."
+  },
+  "clumber": {
+    "tamaño": "Grande",
+    "peso": "25-39 kg",
+    "altura": "43-51 cm",
+    "carácter": "Gentil, leal, pensativo",
+    "esperanza_vida": "10-12 años",
+    "descripcion": "Clumber Spaniel británico, el más grande de los spaniels, cazador tranquilo y metódico."
+  },
+  "cocker_spaniel": {
+    "tamaño": "Mediano",
+    "peso": "12-16 kg",
+    "altura": "36-43 cm",
+    "carácter": "Gentil, inteligente, feliz",
+    "esperanza_vida": "10-14 años",
+    "descripcion": "Spaniel americano popular, compañero familiar alegre con hermoso pelaje sedoso."
+  },
+  "collie": {
+    "tamaño": "Grande",
+    "peso": "20-34 kg",
+    "altura": "51-66 cm",
+    "carácter": "Devoto, gracioso, orgulloso",
+    "esperanza_vida": "12-14 años",
+    "descripcion": "Pastor escocés elegante, famoso por 'Lassie', inteligente y leal guardián familiar."
+  },
+  "curly-coated_retriever": {
+    "tamaño": "Grande",
+    "peso": "25-36 kg",
+    "altura": "58-69 cm",
+    "carácter": "Confiado, orgulloso, perverso",
+    "esperanza_vida": "10-12 años",
+    "descripcion": "Retriever británico con pelaje rizado distintivo, cazador versátil y atlético."
+  },
+  "dandie_dinmont": {
+    "tamaño": "Pequeño",
+    "peso": "8-11 kg",
+    "altura": "20-28 cm",
+    "carácter": "Independiente, inteligente, digno",
+    "esperanza_vida": "11-13 años",
+    "descripcion": "Terrier escocés único con cuerpo largo y patas cortas, cazador tenaz pero gentil."
+  },
+  "dhole": {
+    "tamaño": "Mediano",
+    "peso": "12-20 kg",
+    "altura": "42-55 cm",
+    "carácter": "Social, inteligente, territorial",
+    "esperanza_vida": "8-10 años",
+    "descripcion": "Perro salvaje asiático, cazador en manada altamente social y cooperativo."
+  },
+  "dingo": {
+    "tamaño": "Mediano",
+    "peso": "13-24 kg",
+    "altura": "47-67 cm",
+    "carácter": "Independiente, territorial, adaptable",
+    "esperanza_vida": "12-14 años",
+    "descripcion": "Perro salvaje australiano, cazador solitario adaptado al outback australiano."
+  },
+  "doberman": {
+    "tamaño": "Grande",
+    "peso": "27-45 kg",
+    "altura": "61-72 cm",
+    "carácter": "Leal, valiente, alerta",
+    "esperanza_vida": "10-13 años",
+    "descripcion": "Perro alemán elegante y atlético, guardián inteligente y protector familiar devoto."
+  },
+  "english_foxhound": {
+    "tamaño": "Grande",
+    "peso": "25-34 kg",
+    "altura": "58-64 cm",
+    "carácter": "Gentil, sociable, activo",
+    "esperanza_vida": "10-13 años",
+    "descripcion": "Sabueso británico tradicional, cazador en manada, gentil y sociable."
+  },
+  "english_setter": {
+    "tamaño": "Grande",
+    "peso": "20-36 kg",
+    "altura": "61-69 cm",
+    "carácter": "Gentil, amigable, plácido",
+    "esperanza_vida": "12 años",
+    "descripcion": "Perro de caza británico elegante, gentil compañero familiar con hermoso pelaje moteado."
+  },
+  "english_springer": {
+    "tamaño": "Mediano",
+    "peso": "18-25 kg",
+    "altura": "46-56 cm",
+    "carácter": "Amigable, juguetón, obediente",
+    "esperanza_vida": "12-14 años",
+    "descripcion": "English Springer Spaniel, cazador entusiasta y compañero familiar energético."
+  },
+  "entlebucher": {
+    "tamaño": "Mediano",
+    "peso": "20-30 kg",
+    "altura": "40-50 cm",
+    "carácter": "Amigable, enérgico, inteligente",
+    "esperanza_vida": "11-15 años",
+    "descripcion": "Perro de montaña suizo más pequeño, pastor ágil y leal compañero familiar."
+  },
+  "eskimo_dog": {
+    "tamaño": "Grande",
+    "peso": "30-40 kg",
+    "altura": "51-69 cm",
+    "carácter": "Fuerte, resistente, trabajador",
+    "esperanza_vida": "10-15 años",
+    "descripcion": "Perro ártico de trineo, increíblemente resistente y adaptado al frío extremo."
+  },
+  "flat-coated_retriever": {
+    "tamaño": "Grande",
+    "peso": "25-36 kg",
+    "altura": "56-62 cm",
+    "carácter": "Optimista, amigable, confiado",
+    "esperanza_vida": "8-10 años",
+    "descripcion": "Retriever británico con pelaje liso, 'Peter Pan' de los retrievers, siempre joven de corazón."
+  },
+  "french_bulldog": {
+    "tamaño": "Pequeño",
+    "peso": "8-14 kg",
+    "altura": "28-33 cm",
+    "carácter": "Juguetón, adaptable, inteligente",
+    "esperanza_vida": "10-12 años",
+    "descripcion": "Bulldog francés compacto con orejas de murciélago, excelente perro de apartamento y compañía."
+  },
+  "german_shepherd": {
+    "tamaño": "Grande",
+    "peso": "22-40 kg",
+    "altura": "55-65 cm",
+    "carácter": "Seguro, valiente, versátil",
+    "esperanza_vida": "9-13 años",
+    "descripcion": "Pastor alemán versátil, perro de trabajo excepcional, guardián leal y protector familiar."
+  },
+  "german_short-haired_pointer": {
+    "tamaño": "Grande",
+    "peso": "20-32 kg",
+    "altura": "53-64 cm",
+    "carácter": "Amigable, inteligente, dispuesto",
+    "esperanza_vida": "10-12 años",
+    "descripcion": "Perro de caza alemán versátil, atlético cazador y compañero familiar energético."
+  },
+  "giant_schnauzer": {
+    "tamaño": "Grande",
+    "peso": "27-48 kg",
+    "altura": "60-70 cm",
+    "carácter": "Leal, alerta, entrenador",
+    "esperanza_vida": "12-15 años",
+    "descripcion": "Schnauzer alemán más grande, poderoso perro de trabajo y guardián protector."
+  },
+  "golden_retriever": {
+    "tamaño": "Grande",
+    "peso": "25-34 kg",
+    "altura": "51-61 cm",
+    "carácter": "Amigable, inteligente, devoto",
+    "esperanza_vida": "10-12 años",
+    "descripcion": "Una de las razas más populares, excelente perro familiar, inteligente y gentil con todos."
+  },
+  "gordon_setter": {
+    "tamaño": "Grande",
+    "peso": "20-36 kg",
+    "altura": "58-69 cm",
+    "carácter": "Confiado, ansioso, audaz",
+    "esperanza_vida": "12-13 años",
+    "descripcion": "Setter escocés negro y fuego, cazador leal y elegante compañero familiar."
+  },
+  "great_dane": {
+    "tamaño": "Gigante",
+    "peso": "45-90 kg",
+    "altura": "71-86 cm",
+    "carácter": "Amigable, paciente, confiable",
+    "esperanza_vida": "7-10 años",
+    "descripcion": "El 'Apolo de los perros', gigante gentil alemán, majestuoso pero dulce compañero."
+  },
+  "great_pyrenees": {
+    "tamaño": "Grande",
+    "peso": "39-54 kg",
+    "altura": "63-81 cm",
+    "carácter": "Paciente, seguro, gentil",
+    "esperanza_vida": "10-12 años",
+    "descripcion": "Guardián de rebaños pirenaico, majestuoso protector nocturno, gentil gigante familiar."
+  },
+  "greater_swiss_mountain_dog": {
+    "tamaño": "Grande",
+    "peso": "38-61 kg",
+    "altura": "60-72 cm",
+    "carácter": "Amigable, paciente, confiable",
+    "esperanza_vida": "8-11 años",
+    "descripcion": "Perro de montaña suizo más grande, trabajador fuerte y gentil gigante familiar."
+  },
+  "groenendael": {
+    "tamaño": "Grande",
+    "peso": "20-30 kg",
+    "altura": "56-66 cm",
+    "carácter": "Brillante, valiente, alerta",
+    "esperanza_vida": "12-14 años",
+    "descripcion": "Pastor belga negro, inteligente y versátil perro de trabajo y deportes."
+  },
+  "ibizan_hound": {
+    "tamaño": "Grande",
+    "peso": "20-30 kg",
+    "altura": "56-74 cm",
+    "carácter": "Tranquilo, gentil, atlético",
+    "esperanza_vida": "11-14 años",
+    "descripcion": "Galgo español elegante con orejas erectas, cazador ágil y compañero tranquilo."
+  },
+  "irish_setter": {
+    "tamaño": "Grande",
+    "peso": "25-32 kg",
+    "altura": "61-69 cm",
+    "carácter": "Extrovertido, dulce, activo",
+    "esperanza_vida": "12-15 años",
+    "descripcion": "Setter irlandés rojo brillante, perro de caza alegre y compañero familiar energético."
+  },
+  "irish_terrier": {
+    "tamaño": "Mediano",
+    "peso": "11-12 kg",
+    "altura": "43-48 cm",
+    "carácter": "Audaz, dashing, tierno",
+    "esperanza_vida": "13-15 años",
+    "descripcion": "Terrier irlandés rojo, 'diablo rojo' valiente pero gentil compañero familiar."
+  },
+  "irish_water_spaniel": {
+    "tamaño": "Grande",
+    "peso": "20-30 kg",
+    "altura": "51-61 cm",
+    "carácter": "Juguetón, valiente, trabajador",
+    "esperanza_vida": "12-13 años",
+    "descripcion": "Spaniel irlandés con pelaje rizado resistente al agua, cazador entusiasta y payaso familiar."
+  },
+  "irish_wolfhound": {
+    "tamaño": "Gigante",
+    "peso": "40-55 kg",
+    "altura": "71-90 cm",
+    "carácter": "Digno, amable, tranquilo",
+    "esperanza_vida": "6-8 años",
+    "descripcion": "El perro más alto del mundo, galgo irlandés gigante pero gentil, noble compañero."
+  },
+  "italian_greyhound": {
+    "tamaño": "Pequeño",
+    "peso": "3-5 kg",
+    "altura": "32-38 cm",
+    "carácter": "Juguetón, alerta, sensible",
+    "esperanza_vida": "14-15 años",
+    "descripcion": "Galgo italiano miniatura, elegante y grácil, compañero devoto y sensible."
+  },
+  "japanese_spaniel": {
+    "tamaño": "Pequeño",
+    "peso": "2-4 kg",
+    "altura": "20-27 cm",
+    "carácter": "Encantador, noble, amoroso",
+    "esperanza_vida": "10-12 años",
+    "descripcion": "Chin japonés, perro imperial asiático, compañero elegante y aristocrático."
+  },
+  "keeshond": {
+    "tamaño": "Mediano",
+    "peso": "16-20 kg",
+    "altura": "41-46 cm",
+    "carácter": "Amigable, vivaz, alerta",
+    "esperanza_vida": "13-15 años",
+    "descripcion": "Spitz holandés con 'gafas' distintivas, compañero alegre y sociable."
+  },
+  "kelpie": {
+    "tamaño": "Mediano",
+    "peso": "11-20 kg",
+    "altura": "39-51 cm",
+    "carácter": "Leal, inteligente, trabajador",
+    "esperanza_vida": "10-13 años",
+    "descripcion": "Pastor australiano incansable, trabajador dedicado y leal compañero."
+  },
+  "kerry_blue_terrier": {
+    "tamaño": "Mediano",
+    "peso": "15-18 kg",
+    "altura": "44-51 cm",
+    "carácter": "Alerta, adaptable, de espíritu",
+    "esperanza_vida": "12-15 años",
+    "descripcion": "Terrier irlandés azul, versátil trabajador y gentil compañero familiar."
+  },
+  "komondor": {
+    "tamaño": "Grande",
+    "peso": "36-59 kg",
+    "altura": "64-76 cm",
+    "carácter": "Leal, digno, valiente",
+    "esperanza_vida": "10-12 años",
+    "descripcion": "Pastor húngaro con pelaje de 'trapeador', guardián poderoso e independiente."
+  },
+  "kuvasz": {
+    "tamaño": "Grande",
+    "peso": "32-52 kg",
+    "altura": "66-76 cm",
+    "carácter": "Leal, valiente, paciente",
+    "esperanza_vida": "10-12 años",
+    "descripcion": "Guardián húngaro blanco, protector noble y devoto de la familia."
+  },
+  "labrador_retriever": {
+    "tamaño": "Grande",
+    "peso": "25-36 kg",
+    "altura": "54-62 cm",
+    "carácter": "Extrovertido, activo, amigable",
+    "esperanza_vida": "10-12 años",
+    "descripcion": "La raza más popular, excelente perro familiar y de trabajo, amigable con todos."
+  },
+  "lakeland_terrier": {
+    "tamaño": "Pequeño",
+    "peso": "7-8 kg",
+    "altura": "33-38 cm",
+    "carácter": "Amigable, confiado, valiente",
+    "esperanza_vida": "13-15 años",
+    "descripcion": "Terrier inglés cuadrado y robusto, valiente cazador y compañero alegre."
+  },
+  "leonberg": {
+    "tamaño": "Gigante",
+    "peso": "41-77 kg",
+    "altura": "65-80 cm",
+    "carácter": "Amigable, gentil, juguetón",
+    "esperanza_vida": "7 años",
+    "descripcion": "Leonberger alemán gigante con melena de león, gentil gigante familiar y trabajador."
+  },
+  "lhasa": {
+    "tamaño": "Pequeño",
+    "peso": "6-7 kg",
+    "altura": "25-28 cm",
+    "carácter": "Confiado, inteligente, cómico",
+    "esperanza_vida": "12-15 años",
+    "descripcion": "Lhasa Apso tibetano, guardián palaciego pequeño pero valiente, pelaje largo y fluido."
+  },
+  "malamute": {
+    "tamaño": "Grande",
+    "peso": "34-39 kg",
+    "altura": "58-64 cm",
+    "carácter": "Juguetón, afectuoso, leal",
+    "esperanza_vida": "10-14 años",
+    "descripcion": "Perro ártico de trineo, fuerte y resistente, ideal para climas fríos y trabajo pesado."
+  },
+  "malinois": {
+    "tamaño": "Grande",
+    "peso": "20-30 kg",
+    "altura": "56-66 cm",
+    "carácter": "Inteligente, trabajador, leal",
+    "esperanza_vida": "14-16 años",
+    "descripcion": "Pastor belga malinois, perro de trabajo excepcional, usado en fuerzas militares y policiales."
+  },
+  "maltese_dog": {
+    "tamaño": "Pequeño",
+    "peso": "2-3 kg",
+    "altura": "20-25 cm",
+    "carácter": "Gentil, juguetón, intrépido",
+    "esperanza_vida": "12-15 años",
+    "descripcion": "Perro toy maltés con pelaje sedoso blanco, elegante compañero aristocrático y cariñoso."
+  },
+  "mexican_hairless": {
+    "tamaño": "Mediano",
+    "peso": "6-23 kg",
+    "altura": "25-58 cm",
+    "carácter": "Tranquilo, alerta, alegre",
+    "esperanza_vida": "13-18 años",
+    "descripcion": "Xoloitzcuintli, perro sagrado azteca sin pelo, guardián tranquilo y compañero leal."
+  },
+  "miniature_pinscher": {
+    "tamaño": "Pequeño",
+    "peso": "4-6 kg",
+    "altura": "25-30 cm",
+    "carácter": "Enérgico, alerta, curioso",
+    "esperanza_vida": "12-16 años",
+    "descripcion": "Min Pin alemán, 'Rey de los juguetes', pequeño pero valiente con gran personalidad."
+  },
+  "miniature_poodle": {
+    "tamaño": "Pequeño",
+    "peso": "6-7 kg",
+    "altura": "28-35 cm",
+    "carácter": "Inteligente, activo, alerta",
+    "esperanza_vida": "10-18 años",
+    "descripcion": "Caniche miniatura, inteligente y atlético, excelente perro de compañía y deportes."
+  },
+  "miniature_schnauzer": {
+    "tamaño": "Pequeño",
+    "peso": "5-8 kg",
+    "altura": "30-36 cm",
+    "carácter": "Amigable, inteligente, obediente",
+    "esperanza_vida": "12-15 años",
+    "descripcion": "Schnauzer alemán pequeño, robusto guardián familiar con barba distintiva."
+  },
+  "newfoundland": {
+    "tamaño": "Gigante",
+    "peso": "45-68 kg",
+    "altura": "63-74 cm",
+    "carácter": "Dulce, paciente, devoto",
+    "esperanza_vida": "9-10 años",
+    "descripcion": "Terranova canadiense, gigante gentil rescatista acuático, excelente con niños."
+  },
+  "norfolk_terrier": {
+    "tamaño": "Pequeño",
+    "peso": "5-5.5 kg",
+    "altura": "24-25 cm",
+    "carácter": "Alerta, gregario, intrépido",
+    "esperanza_vida": "13-15 años",
+    "descripcion": "Terrier inglés pequeño con orejas caídas, cazador valiente y compañero alegre."
+  },
+  "norwegian_elkhound": {
+    "tamaño": "Mediano",
+    "peso": "20-25 kg",
+    "altura": "49-52 cm",
+    "carácter": "Amigable, confiado, dependiente",
+    "esperanza_vida": "12-15 años",
+    "descripcion": "Cazador noruego de alces, spitz resistente y leal, guardián alerta de la familia."
+  },
+  "norwich_terrier": {
+    "tamaño": "Pequeño",
+    "peso": "5-5.5 kg",
+    "altura": "25-26 cm",
+    "carácter": "Trabajador, afectuoso, sociable",
+    "esperanza_vida": "13-15 años",
+    "descripcion": "Terrier inglés pequeño con orejas erectas, valiente cazador y compañero encantador."
+  },
+  "old_english_sheepdog": {
+    "tamaño": "Grande",
+    "peso": "27-45 kg",
+    "altura": "56-61 cm",
+    "carácter": "Adaptable, gentil, inteligente",
+    "esperanza_vida": "10-12 años",
+    "descripcion": "Pastor inglés antiguo peludo, gentil gigante familiar con distintivo pelaje gris y blanco."
+  },
+  "otterhound": {
+    "tamaño": "Grande",
+    "peso": "29-52 kg",
+    "altura": "61-69 cm",
+    "carácter": "Afable, bullicioso, incluso temperado",
+    "esperanza_vida": "10-13 años",
+    "descripcion": "Sabueso británico cazador de nutrias, raro perro acuático con pelaje resistente al agua."
+  },
+  "papillon": {
+    "tamaño": "Pequeño",
+    "peso": "1.5-4.5 kg",
+    "altura": "20-28 cm",
+    "carácter": "Amigable, alerta, feliz",
+    "esperanza_vida": "14-16 años",
+    "descripcion": "Spaniel toy francés con orejas de mariposa, elegante y inteligente perro de compañía."
+  },
+  "pekinese": {
+    "tamaño": "Pequeño",
+    "peso": "5-6 kg",
+    "altura": "15-23 cm",
+    "carácter": "Afectuoso, leal, real",
+    "esperanza_vida": "12-14 años",
+    "descripcion": "Pequinés chino imperial, perro león sagrado, compañero real dignificado y valiente."
+  },
+  "pembroke": {
+    "tamaño": "Mediano",
+    "peso": "10-14 kg",
+    "altura": "25-30 cm",
+    "carácter": "Afectuoso, inteligente, alerta",
+    "esperanza_vida": "12-13 años",
+    "descripcion": "Welsh Corgi Pembroke, pastor galés sin cola, favorito de la realeza británica."
+  },
+  "pomeranian": {
+    "tamaño": "Pequeño",
+    "peso": "1.5-3 kg",
+    "altura": "18-30 cm",
+    "carácter": "Vivaz, amigable, vivido",
+    "esperanza_vida": "12-16 años",
+    "descripcion": "Spitz alemán miniatura, pequeño león con gran personalidad, compañero alegre y alerta."
+  },
+  "pug": {
+    "tamaño": "Pequeño",
+    "peso": "6-8 kg",
+    "altura": "25-28 cm",
+    "carácter": "Encantador, travieso, amoroso",
+    "esperanza_vida": "13-15 años",
+    "descripcion": "Carlino chino con cara arrugada, payaso familiar cariñoso, 'mucho perro en poco espacio'."
+  },
+  "redbone": {
+    "tamaño": "Mediano",
+    "peso": "20-32 kg",
+    "altura": "53-69 cm",
+    "carácter": "Incluso temperado, extrovertido, brillante",
+    "esperanza_vida": "11-12 años",
+    "descripcion": "Coonhound estadounidense rojo, cazador nocturno versátil y compañero familiar gentil."
+  },
+  "rhodesian_ridgeback": {
+    "tamaño": "Grande",
+    "peso": "29-41 kg",
+    "altura": "61-69 cm",
+    "carácter": "Afectuoso, digno, incluso temperado",
+    "esperanza_vida": "10-12 años",
+    "descripcion": "Perro león africano con cresta distintiva, cazador valiente y protector familiar leal."
+  },
+  "rottweiler": {
+    "tamaño": "Grande",
+    "peso": "35-60 kg",
+    "altura": "56-69 cm",
+    "carácter": "Leal, amoroso, confiado guardián",
+    "esperanza_vida": "9-10 años",
+    "descripcion": "Rottweiler alemán, poderoso perro de trabajo, guardián devoto y protector familiar."
+  },
+  "saint_bernard": {
+    "tamaño": "Gigante",
+    "peso": "54-82 kg",
+    "altura": "61-70 cm",
+    "carácter": "Juguetón, encantador, inquisitivo",
+    "esperanza_vida": "8-10 años",
+    "descripcion": "San Bernardo suizo, gigante gentil rescatista alpino, baboso pero adorable compañero familiar."
+  },
+  "saluki": {
+    "tamaño": "Grande",
+    "peso": "16-29 kg",
+    "altura": "58-71 cm",
+    "carácter": "Gentil, digno, independiente",
+    "esperanza_vida": "10-17 años",
+    "descripcion": "Galgo persa real, cazador del desierto elegante y aristocrático, compañero silencioso."
+  },
+  "samoyed": {
+    "tamaño": "Grande",
+    "peso": "16-30 kg",
+    "altura": "48-60 cm",
+    "carácter": "Adaptable, gentil, amigable",
+    "esperanza_vida": "12-14 años",
+    "descripcion": "Spitz siberiano blanco sonriente, perro de trineo alegre y compañero familiar cariñoso."
+  },
+  "schipperke": {
+    "tamaño": "Pequeño",
+    "peso": "3-9 kg",
+    "altura": "25-33 cm",
+    "carácter": "Confiado, alerta, curioso",
+    "esperanza_vida": "12-14 años",
+    "descripcion": "Pequeño capitán belga negro, guardián de barcazas, compacto perro guardián y familiar."
+  },
+  "scotch_terrier": {
+    "tamaño": "Pequeño",
+    "peso": "8.5-10 kg",
+    "altura": "25-28 cm",
+    "carácter": "Confiado, independiente, vivaz",
+    "esperanza_vida": "13-15 años",
+    "descripcion": "Scottish Terrier, 'Scottie' digno y valiente, icónico terrier escocés con gran personalidad."
+  },
+  "scottish_deerhound": {
+    "tamaño": "Gigante",
+    "peso": "34-50 kg",
+    "altura": "71-81 cm",
+    "carácter": "Gentil, digno, polite",
+    "esperanza_vida": "8-11 años",
+    "descripcion": "Galgo escocés gigante, 'sabueso real de Escocia', noble cazador de ciervos y gentil compañero."
+  },
+  "sealyham_terrier": {
+    "tamaño": "Pequeño",
+    "peso": "10-11 kg",
+    "altura": "25-30 cm",
+    "carácter": "Alerta, extrovertido, bien equilibrado",
+    "esperanza_vida": "12-14 años",
+    "descripcion": "Terrier galés blanco, cazador determinado y compañero encantador con personalidad distintiva."
+  },
+  "shetland_sheepdog": {
+    "tamaño": "Pequeño",
+    "peso": "5-11 kg",
+    "altura": "33-41 cm",
+    "carácter": "Juguetón, enérgico, brillante",
+    "esperanza_vida": "12-14 años",
+    "descripcion": "Sheltie escocés, collie miniatura inteligente, pastor ágil y compañero familiar devoto."
+  },
+  "shih-tzu": {
+    "tamaño": "Pequeño",
+    "peso": "4-7 kg",
+    "altura": "23-28 cm",
+    "carácter": "Afectuoso, juguetón, extrovertido",
+    "esperanza_vida": "10-18 años",
+    "descripcion": "Perro león tibetano, noble compañero imperial chino con pelaje sedoso y personalidad encantadora."
+  },
+  "siberian_husky": {
+    "tamaño": "Grande",
+    "peso": "16-27 kg",
+    "altura": "51-60 cm",
+    "carácter": "Leal, travieso, extrovertido",
+    "esperanza_vida": "12-14 años",
+    "descripcion": "Husky siberiano de ojos azules, perro de trineo atlético, aventurero independiente y vocal."
+  },
+  "silky_terrier": {
+    "tamaño": "Pequeño",
+    "peso": "4-5 kg",
+    "altura": "23-26 cm",
+    "carácter": "Amigable, responsivo, inquisitivo",
+    "esperanza_vida": "13-15 años",
+    "descripcion": "Terrier sedoso australiano, elegante toy con pelaje brillante, compañero alerta y cariñoso."
+  },
+  "soft-coated_wheaten_terrier": {
+    "tamaño": "Mediano",
+    "peso": "14-20 kg",
+    "altura": "43-48 cm",
+    "carácter": "Amigable, feliz, profundamente devoto",
+    "esperanza_vida": "13-15 años",
+    "descripcion": "Terrier irlandés dorado con pelaje sedoso, trabajador versátil y compañero familiar alegre."
+  },
+  "staffordshire_bullterrier": {
+    "tamaño": "Mediano",
+    "peso": "11-17 kg",
+    "altura": "36-41 cm",
+    "carácter": "Valiente, tenaz, afectuoso",
+    "esperanza_vida": "12-14 años",
+    "descripcion": "Staffordshire Bull Terrier inglés, musculoso pero gentil, excelente con niños, 'niñera canina'."
+  },
+  "standard_poodle": {
+    "tamaño": "Grande",
+    "peso": "20-32 kg",
+    "altura": "45-62 cm",
+    "carácter": "Activo, orgulloso, muy inteligente",
+    "esperanza_vida": "10-18 años",
+    "descripcion": "Caniche estándar, atlético e inteligente, perro de agua versátil y elegante compañero."
+  },
+  "standard_schnauzer": {
+    "tamaño": "Mediano",
+    "peso": "14-20 kg",
+    "altura": "44-50 cm",
+    "carácter": "Amigable, inteligente, dispuesto a complacer",
+    "esperanza_vida": "13-16 años",
+    "descripcion": "Schnauzer alemán original, trabajador versátil con barba distintiva, guardián familiar alerta."
+  },
+  "sussex_spaniel": {
+    "tamaño": "Mediano",
+    "peso": "16-20 kg",
+    "altura": "33-38 cm",
+    "carácter": "Amigable, feliz, relajado",
+    "esperanza_vida": "13-15 años",
+    "descripcion": "Spaniel inglés dorado, cazador entusiasta pero relajado, compañero familiar gentil y alegre."
+  },
+  "tibetan_mastiff": {
+    "tamaño": "Gigante",
+    "peso": "32-73 kg",
+    "altura": "61-76 cm",
+    "carácter": "Independiente, reservado, inteligente",
+    "esperanza_vida": "10-12 años",
+    "descripcion": "Mastín tibetano, guardián del Himalaya, impresionante protector independiente y leal."
+  },
+  "tibetan_terrier": {
+    "tamaño": "Mediano",
+    "peso": "8-14 kg",
+    "altura": "35-41 cm",
+    "carácter": "Afectuoso, sensible, inteligente",
+    "esperanza_vida": "15-16 años",
+    "descripcion": "Terrier tibetano peludo, 'perro de la suerte sagrado', compañero adaptable y cariñoso."
+  },
+  "toy_poodle": {
+    "tamaño": "Pequeño",
+    "peso": "2-3 kg",
+    "altura": "24-28 cm",
+    "carácter": "Activo, alerta, inteligente",
+    "esperanza_vida": "10-18 años",
+    "descripcion": "Caniche toy, pequeño pero atlético, inteligente compañero urbano con personalidad vivaz."
+  },
+  "toy_terrier": {
+    "tamaño": "Pequeño",
+    "peso": "1-3 kg",
+    "altura": "15-25 cm",
+    "carácter": "Vivaz, alerta, leal",
+    "esperanza_vida": "13-16 años",
+    "descripcion": "Toy Terrier inglés, diminuto pero valiente, elegante compañero con espíritu de terrier grande."
+  },
+  "vizsla": {
+    "tamaño": "Grande",
+    "peso": "18-29 kg",
+    "altura": "53-64 cm",
+    "carácter": "Afectuoso, gentil, enérgico",
+    "esperanza_vida": "12-14 años",
+    "descripcion": "Pointer húngaro dorado, cazador versatil y compañero familiar atlético, 'velcro dog' cariñoso."
+  },
+  "walker_hound": {
+    "tamaño": "Grande",
+    "peso": "20-32 kg",
+    "altura": "51-69 cm",
+    "carácter": "Inteligente, confiado, sociable",
+    "esperanza_vida": "12-13 años",
+    "descripcion": "Treeing Walker Coonhound, cazador nocturno estadounidense, sabueso vocal y enérgico."
+  },
+  "weimaraner": {
+    "tamaño": "Grande",
+    "peso": "25-40 kg",
+    "altura": "57-70 cm",
+    "carácter": "Amigable, intrépido, obediente",
+    "esperanza_vida": "10-13 años",
+    "descripcion": "Fantasma gris alemán, pointer aristocrático, cazador versátil y compañero familiar atlético."
+  },
+  "welsh_springer_spaniel": {
+    "tamaño": "Mediano",
+    "peso": "16-20 kg",
+    "altura": "43-48 cm",
+    "carácter": "Leal, afectuoso, juguetón",
+    "esperanza_vida": "12-15 años",
+    "descripcion": "Springer Spaniel galés rojo y blanco, cazador entusiasta y compañero familiar devoto."
+  },
+  "west_highland_white_terrier": {
+    "tamaño": "Pequeño",
+    "peso": "6-10 kg",
+    "altura": "25-28 cm",
+    "carácter": "Leal, feliz, entretenido",
+    "esperanza_vida": "13-15 años",
+    "descripcion": "Westie escocés blanco, terrier robusto y alegre, compañero familiar confiado y cariñoso."
+  },
+  "whippet": {
+    "tamaño": "Mediano",
+    "peso": "11-21 kg",
+    "altura": "44-57 cm",
+    "carácter": "Afectuoso, juguetón, tranquilo",
+    "esperanza_vida": "12-15 años",
+    "descripcion": "Galgo inglés mediano, 'galgo del pobre', velocista gentil y compañero tranquilo en casa."
+  },
+  "wire-haired_fox_terrier": {
+    "tamaño": "Pequeño",
+    "peso": "8-9 kg",
+    "altura": "39 cm",
+    "carácter": "Alerta, confiado, animado",
+    "esperanza_vida": "13-15 años",
+    "descripcion": "Fox Terrier de pelo duro, cazador valiente y enérgico, compañero familiar animado y alerta."
+  },
+  "yorkshire_terrier": {
+    "tamaño": "Pequeño",
+    "peso": "2-3 kg",
+    "altura": "18-23 cm",
+    "carácter": "Afectuoso, vivaz, tomboyish",
+    "esperanza_vida": "11-15 años",
+    "descripcion": "Yorkie inglés, pequeño terrier con pelaje sedoso, valiente guardián toy y compañero elegante."
+  }
+}

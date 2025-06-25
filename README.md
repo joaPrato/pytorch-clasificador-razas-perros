@@ -35,7 +35,8 @@ clasificador-razas-perros/
 │   └── train/           # Imágenes de entrenamiento (ejemplos)
 │
 ├── dev/
-│   ├── model_dev.ipynb   
+│   ├── model_dev.ipynb
+|
 └── prod/
     └── resnet50_model.pth  # Modelo entrenado
     ├── app.py                 # Aplicación principal de Streamlit

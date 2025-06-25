@@ -27,9 +27,6 @@ Una aplicación web interactiva desarrollada con **Streamlit** que utiliza una r
 ```
 clasificador-razas-perros/
 │
-├── app.py                 # Aplicación principal de Streamlit
-├── utils.py              # Funciones utilitarias
-├── requirements.txt      # Dependencias del proyecto
 ├── README.md            # Este archivo
 │
 ├── data/
@@ -37,8 +34,13 @@ clasificador-razas-perros/
 │   ├── breed_data.json  # Información detallada de las razas
 │   └── train/           # Imágenes de entrenamiento (ejemplos)
 │
+├── dev/
+│   ├── model_dev.ipynb   
 └── prod/
     └── resnet50_model.pth  # Modelo entrenado
+    ├── app.py                 # Aplicación principal de Streamlit
+    ├── utils.py              # Funciones utilitarias
+    ├── requirements.txt      # Dependencias del proyecto
 ```
 
 ## 🚀 Instalación y Configuración
